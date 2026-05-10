@@ -1,126 +1,159 @@
-  body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            font-family: 'Nunito', sans-serif;
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    background:
+        repeating-linear-gradient(
+            135deg,
+            rgba(255,255,255,0.04) 0px,
+            rgba(255,255,255,0.04) 2px,
+            transparent 2px,
+            transparent 28px
+        ),
+        linear-gradient(135deg, #0f2b4d, #2559a6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(16px, 4vw, 40px);
+    box-sizing: border-box;
+}
 
-            background:
-                repeating-linear-gradient(
-                    135deg,
-                    rgba(255,255,255,0.04) 0px,
-                    rgba(255,255,255,0.04) 2px,
-                    transparent 2px,
-                    transparent 28px
-                ),
-                linear-gradient(135deg, #0f2b4d, #2559a6);
+/* ===== CARD ===== */
+.login-card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: clamp(16px, 3vw, 24px);
+    padding: clamp(24px, 5vw, 45px) clamp(20px, 5vw, 45px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+    box-sizing: border-box;
+}
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+/* ===== BRAND ===== */
+.brand-title {
+    font-size: clamp(24px, 5vw, 38px);
+    font-weight: 800;
+    color: #173b6c;
+    margin-bottom: 0;
+    text-align: center;
+}
 
-        .login-card {
-            width: 100%;
-            max-width: 500px;
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 45px;
-            box-shadow: 0 10px 35px rgba(0,0,0,0.18);
-        }
+.brand-subtitle {
+    color: #7d7d7d;
+    font-size: clamp(13px, 2.5vw, 16px);
+    margin-top: -5px;
+    text-align: center;
+}
 
-        .logo-box {
-            width: 62px;
-            height: 62px;
-            background: #183b6b;
-            border-radius: 14px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffc107;
-            font-size: 24px;
-            font-weight: bold;
-        }
+.brand-desc {
+    color: #6c757d;
+    font-size: clamp(14px, 2.5vw, 17px);
+    margin-top: 10px;
+    text-align: center;
+}
 
-        .brand-title {
-            font-size: 38px;
-            font-weight: 800;
-            color: #173b6c;
-            margin-bottom: 0;
-        }
+/* ===== DIVIDER ===== */
+.divider {
+    margin: clamp(18px, 4vw, 28px) 0;
+    border-top: 1px solid #e5e5e5;
+}
 
-        .brand-subtitle {
-            color: #7d7d7d;
-            font-size: 16px;
-            margin-top: -5px;
-        }
+/* ===== FORM ===== */
+.form-label {
+    font-weight: 700;
+    color: #2f3e55;
+    font-size: clamp(13px, 2vw, 15px);
+}
 
-        .brand-desc {
-            color: #6c757d;
-            font-size: 17px;
-            margin-top: 10px;
-        }
+.form-control {
+    width: 100%;
+    height: clamp(44px, 8vw, 52px);
+    border-radius: clamp(10px, 2vw, 14px);
+    border: 1px solid #d8d8d8;
+    font-size: clamp(14px, 2.5vw, 16px);
+    padding-left: 18px;
+    box-sizing: border-box;
+}
 
-        .divider {
-            margin: 28px 0;
-            border-top: 1px solid #e5e5e5;
-        }
+.form-control:focus {
+    box-shadow: none;
+    border-color: #1f4e87;
+    outline: none;
+}
 
-        .form-label {
-            font-weight: 700;
-            color: #2f3e55;
-        }
+/* ===== BUTTON ===== */
+.btn-login {
+    width: 100%;
+    height: clamp(46px, 8vw, 54px);
+    border-radius: clamp(10px, 2vw, 14px);
+    background: #183b6b;
+    border: none;
+    font-size: clamp(15px, 3vw, 18px);
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
-        .form-control {
-            height: 52px;
-            border-radius: 14px;
-            border: 1px solid #d8d8d8;
-            font-size: 16px;
-            padding-left: 18px;
-        }
+.btn-login:hover {
+    background: #102b4d;
+}
 
-        .form-control:focus {
-            box-shadow: none;
-            border-color: #1f4e87;
-        }
+.btn-login:active {
+    transform: scale(0.98);
+}
 
-        .btn-login {
-            height: 54px;
-            border-radius: 14px;
-            background: #183b6b;
-            border: none;
-            font-size: 18px;
-            font-weight: 700;
-            transition: 0.3s;
-        }
+/* ===== FORGOT LINK ===== */
+.forgot-link {
+    color: #183b6b;
+    font-size: clamp(13px, 2vw, 15px);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-        .btn-login:hover {
-            background: #102b4d;
-        }
+.forgot-link:hover {
+    color: #102b4d;
+    text-decoration: underline;
+}
 
-        .forgot-link {
-            color: #183b6b;
-            font-size: 15px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+/* ===== MEDIA QUERIES ===== */
 
-        .forgot-link:hover {
-            color: #102b4d;
-            text-decoration: underline;
-        }
-        @media (max-width: 576px) {
+/* Tablet landscape & small desktop */
+@media (max-width: 768px) {
+    .login-card {
+        max-width: 480px;
+    }
+}
 
-            .login-card {
-                margin: 20px;
-                padding: 30px 25px;
-            }
+/* Tablet portrait */
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
 
-            .brand-title {
-                font-size: 30px;
-            }
+/* Mobile */
+@media (max-width: 480px) {
+    .login-card {
+        border-radius: 20px;
+    }
 
-            .brand-desc {
-                font-size: 15px;
-            }
-        }
+    .form-control {
+        font-size: 16px; /* Cegah auto-zoom di iOS */
+    }
+}
+
+/* Mobile kecil */
+@media (max-width: 360px) {
+    body {
+        padding: 12px;
+    }
+
+    .login-card {
+        border-radius: 16px;
+    }
+}

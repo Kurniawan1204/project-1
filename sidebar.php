@@ -1,100 +1,188 @@
- <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="assets/template/admin/pages/index.html">
-        <!-- <div class="sidebar-brand-icon">
-          <img src="assets/template/admin/img/logo/logo2.png">
-        </div> -->
-        <div class="sidebar-brand-text mx-3">SIMASKIR</div>
-      </a>
-      <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="assets/template/admin/pages/index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading">
-        Features
+<!-- Sidebar -->
+<ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+
+  <!-- Logo -->
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/simaskir_1/index.php">
+
+    <div class="sidebar-brand-icon">
+      <i class="fas fa-store-alt"></i>
+    </div>
+    <div class="sidebar-brand-text mx-2">
+      SIMASKIR
+    </div>
+  </a>
+  <hr class="sidebar-divider my-0">
+  <!-- Dashboard -->
+  <li class="nav-item active">
+    <a class="nav-link" href="/simaskir_1/index.php">
+      <i class="fas fa-home"></i>
+      <span>Dashboard</span>
+    </a>
+  </li>
+
+  <hr class="sidebar-divider">
+
+  <div class="sidebar-heading">
+    MASTER DATA
+  </div>
+
+  <!-- Produk -->
+  <li class="nav-item">
+    <a class="nav-link collapsed"
+      data-toggle="collapse"
+      data-target="#collapseProduk"
+      aria-expanded="true"
+      aria-controls="collapseProduk">
+
+      <i class="fas fa-box-open"></i>
+      <span>Produk</span>
+    </a>
+
+    <div id="collapseProduk" class="collapse"
+      aria-labelledby="headingProduk"
+      data-parent="#accordionSidebar">
+
+      <div class=" py-2 collapse-inner rounded">
+
+        <a class="collapse-item" href="/simaskir_1/crud/produk/index_produk.php">
+          Data Produk
+        </a>
+
+        <a class="collapse-item" href="/simaskir_1/crud/kategori/index_kategori.php">
+          Kategori Produk
+        </a>
+        </a>
+
       </div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-          aria-expanded="true" aria-controls="collapseBootstrap">
-          <i class="far fa-fw fa-window-maximize"></i>
-          <span>Bootstrap UI</span>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="/simaskir_1/crud/transaksi/index_kasir.php"
+      data-toggle="collapse">
+      <i class="fas fa-cash-register"></i>
+      <span>Kasir</span>
+    </a>
+  </li>
+  <!-- Transaksi -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="/simaskir_1/crud/transaksi/index_transaksi.php"
+      data-toggle="collapse"
+      data-target="#collapseTransaksi"
+      aria-expanded="true"
+      aria-controls="collapseTransaksi">
+
+      <i class="fas fa-cash-register"></i>
+      <span>Transaksi</span>
+    </a>
+
+    <div id="collapseTransaksi" class="collapse"
+      aria-labelledby="headingTransaksi"
+      data-parent="#accordionSidebar">
+
+      <div class=" py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Menu Transaksi</h6>
+
+        <a class="collapse-item" href="#">
+          Penjualan
         </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Bootstrap UI</h6>
-            <a class="collapse-item" href= "assets/template/admin/pages/alerts.html">Alerts</a>
-            <a class="collapse-item" href="assets/template/admin/pages/buttons.html">Buttons</a>
-            <a class="collapse-item" href="assets/template/admin/pages/dropdowns.html">Dropdowns</a>
-            <a class="collapse-item" href="assets/template/admin/pages/modals.html">Modals</a>
-            <a class="collapse-item" href="assets/template/admin/pages/popovers.html">Popovers</a>
-            <a class="collapse-item" href="assets/template/admin/pages/progress-bar.html">Progress Bars</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
-          aria-controls="collapseForm">
-          <i class="fab fa-fw fa-wpforms"></i>
-          <span>Forms</span>
+
+        <a class="collapse-item" href="#">
+          Pembelian
         </a>
-        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Forms</h6>
-            <a class="collapse-item" href="assets/template/admin/pages/form_basics.html">Form Basics</a>
-            <a class="collapse-item" href="assets/template/admin/pages/form_advanceds.html">Form Advanceds</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
-          aria-controls="collapseTable">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span>
-        </a>
-        <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Tables</h6>
-            <a class="collapse-item" href="assets/template/admin/pages/simple-tables.html">Simple Tables</a>
-            <a class="collapse-item" href="assets/template/admin/pages/datatables.html">DataTables</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="assets/template/admin/pages/ui-colors.html">
-          <i class="fas fa-fw fa-palette"></i>
-          <span>UI Colors</span>
-        </a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="sidebar-heading">
-        Examples
       </div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
-          aria-controls="collapsePage">
-          <i class="fas fa-fw fa-columns"></i>
-          <span>Pages</span>
+    </div>
+  </li>
+
+  <!-- Manajemen Stok -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="/simaskir_1/crud/stok/index_stok.php"
+      data-toggle="collapse"
+      data-target="#collapseStok"
+      aria-expanded="true"
+      aria-controls="collapseStok">
+
+      <i class="fas fa-warehouse"></i>
+      <span>Manajemen Stok</span>
+    </a>
+
+    <div id="collapseStok" class="collapse"
+      aria-labelledby="headingStok"
+      data-parent="#accordionSidebar">
+
+      <div class=" py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Stok Barang</h6>
+
+        <a class="collapse-item" href="#">
+          Data Stok
         </a>
-        <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Example Pages</h6>
-            <a class="collapse-item" href="assets/template/admin/pages/login.html">Login</a>
-            <a class="collapse-item" href="assets/template/admin/pages/register.html">Register</a>
-            <a class="collapse-item" href="assets/template/admin/pages/404.html">404 Page</a>
-            <a class="collapse-item" href="assets/template/admin/pages/blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="assets/template/admin/pages/charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span>
+
+        <a class="collapse-item" href="#">
+          Stok Masuk
         </a>
-      </li>
-      <hr class="sidebar-divider">
-      <div class="version" id="version-ruangadmin"></div>
-    </ul>
-    <!-- Sidebar -->
+
+        <a class="collapse-item" href="#">
+          Stok Keluar
+        </a>
+      </div>
+    </div>
+  </li>
+
+  <!-- Pelanggan -->
+  <li class="nav-item">
+    <a class="nav-link" href="/simaskir_1/crud/pelanggan/index_pelanggan.php">
+      <i class="fas fa-users"></i>
+      <span>Pelanggan</span>
+    </a>
+  </li>
+
+  <!-- Supplier -->
+  <li class="nav-item">
+    <a class="nav-link" href="/simaskir_1/crud/supplier/index_supplier.php">
+      <i class="fas fa-truck"></i>
+      <span>Supplier</span>
+    </a>
+  </li>
+
+  <hr class="sidebar-divider">
+
+  <div class="sidebar-heading">
+    LAPORAN
+  </div>
+
+  <!-- Laporan -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="/simaskir_1/crud/laporan/index_laporan.php"
+      data-toggle="collapse"
+      data-target="#collapseLaporan"
+      aria-expanded="true"
+      aria-controls="collapseLaporan">
+
+      <i class="fas fa-chart-line"></i>
+      <span>Laporan</span>
+    </a>
+
+    <div id="collapseLaporan" class="collapse"
+      aria-labelledby="headingLaporan"
+      data-parent="#accordionSidebar">
+
+      <div class=" py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Data Laporan</h6>
+
+        <a class="collapse-item" href="#">
+          Laporan Penjualan
+        </a>
+
+        <a class="collapse-item" href="#">
+          Laporan Pembelian
+        </a>
+
+        <a class="collapse-item" href="#">
+          Laporan Stok
+        </a>
+      </div>
+    </div>
+  </li>
+  <hr class="sidebar-divider">
+  <div> simaskir 1.1 </div>
+</ul>
+<!-- Sidebar -->
