@@ -82,11 +82,11 @@
       <div class=" py-2 collapse-inner rounded">
         <h6 class="collapse-header">Menu Transaksi</h6>
 
-        <a class="collapse-item" href="#">
+        <a class="collapse-item" href="/simaskir_1/crud/penjualan/index_penjualan.php">
           Penjualan
         </a>
 
-        <a class="collapse-item" href="#">
+        <a class="collapse-item" href="/simaskir_1/crud/transaksi/index_pembelian.php">
           Pembelian
         </a>
       </div>
